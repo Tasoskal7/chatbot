@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA 2K25 Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1>NBA 2K25 Chatbot</h1>
+            <nav>
+                <ul>
+                    <li><a href="#chat">Chatbot</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h2>Welcome to the Ultimate NBA 2K25 Assistant</h2>
+            <p>Get tips, learn strategies, and stay updated on everything NBA 2K25 with our AI-powered chatbot!</p>
+            <a href="#chat" class="btn">Start Chatting</a>
+        </div>
+    </section>
+
+    <section id="chat" class="chat-section">
+        <div class="container">
+            <h2 class="chat-heading">Interact with the NBA 2K25 Chatbot</h2>
+            <div class="chat-container">
+                <div class="messages" id="messages"></div>
+                <div class="input-box">
+                    <input type="text" id="userInput" placeholder="Ask me anything about NBA 2K25..." onkeypress="handleKeyPress(event)" />
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+                <li>Up-to-date information about NBA 2K25 gameplay.</li>
+                <li>Pro tips to improve your performance.</li>
+                <li>Learn about updates, patches, and features.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About the Chatbot</h2>
+            <p>This chatbot is designed to help NBA 2K25 players master the game. From gameplay mechanics to latest updates, our AI has you covered!</p>
+            <h3>About the Creator</h3>
+            <p>Hi, I’m Anastasios Kalomoiris, an undergraduate IT and Telecommunications student at the University of Peloponnese.<br>
+            This page is a passion project I created for gamers and NBA 2K25 enthusiasts.<br>
+            Here, you’ll find an AI-powered chatbot offering tips, tricks, and updates about the game.<br>
+            It’s completely free and purely for fun—just a small project I’ve built to combine my love for gaming and technology.<br>
+            Enjoy!</p>
+        </div>
+    </section>
+
+    <section id="disclaimer" class="disclaimer-section">
+        <div class="container">
+            <h2>Disclaimer</h2>
+            <p>This website is an independent fan project created for entertainment and informational purposes. It is not affiliated with, endorsed by, or in any way associated with Visual Concepts, 2K Sports, or OpenAI. "NBA 2K25" is a trademark of Visual Concepts and 2K Sports. All trademarks, logos, and brand names used on this site are the property of their respective owners. Any images displayed on this site are AI-generated and do not depict actual game assets or real-world individuals.</p>
+        </div>
+    </section>
+
+    <section id="credits" class="credits-section">
+        <div class="container">
+            <h2>Credits</h2>
+            <p>The chatbot on this site is powered by OpenAI's technology. All AI-generated content is created using OpenAI's models and tools.</p>
+            <img src="{{ url_for('static', filename='images/nba2k25_about.jpg') }}" alt="About NBA 2K25" />
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NBA 2K25 Chatbot by Tasos. All rights reserved. This is a fan-made project and is not affiliated with or endorsed by Visual Concepts, 2K Sports, or the NBA.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

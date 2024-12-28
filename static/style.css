@@ -1,0 +1,237 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero-section {
+    background: url('../static/images/welcome.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h2, .hero-section p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text outline */
+}
+
+.hero-section .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero-section .btn:hover {
+    background-color: #e55d4a;
+}
+
+/* Chat section */
+.chat-section {
+    padding: 40px 20px;
+    background: url('../static/images/nba2k25_hero.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white; /* Ensure text color is white for better visibility */
+}
+
+.chat-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.chat-heading {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.chat-container {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #333; /* Ensure text color inside the container is readable */
+}
+
+.messages {
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.input-box {
+    display: flex;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-box button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.input-box button:hover {
+    background-color: #45a049;
+}
+
+/* Features and About sections */
+.features-section, .about-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features-section ul {
+    list-style: disc;
+    margin: 20px auto;
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Disclaimer section */
+.disclaimer-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.disclaimer-section h2 {
+    margin-bottom: 20px;
+}
+
+.disclaimer-section p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Credits section */
+.credits-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.credits-section h2 {
+    margin-bottom: 20px;
+}
+
+.credits-section p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
