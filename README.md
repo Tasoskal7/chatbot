@@ -1,4 +1,4 @@
-# NBA2K25 Chatbot Web Page
+# NBA2K Chatbot Web Page
 
 ## Overview
 This project features a web page that integrates a chatbot using an API to provide users with real-time updates, tactics, and information related to NBA 2K25. The chatbot allows users to interact with it and learn more about the game, including updates, strategies, and various gameplay tips.
